@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>my jquery</title>
+
+</head>
+<body>
+	<div id='div1'>
+		<button id='obt'>haha</button>
+		<ul id='ulq'>
+			<li class='a'>111</li>
+			<li class='a'>222</li>
+			<li>333</li>
+		</ul>
+	</div>
+	<script src='xquery.js'></script>
+	<script>
+        $(function(){
+        	console.log('hello');
+        	$('#ulq').on('click','.a' ,function(){
+        		alert(this.innerHTML);
+        	});
+        	// $('#obt').click(function(){
+        	// 	alert('this is a button');
+        	// })
+        	// $('.a').mouseover(function(){
+        	// 	alert(this.innerHTML);
+        	// })
+        });
+		
+	</script>
+</body>
+</html>
